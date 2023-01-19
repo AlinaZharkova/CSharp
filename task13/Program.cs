@@ -28,3 +28,8 @@ int result = -1;
     }
 return result;
 }
+
+// второй вариант решения задачи (не работает для отрицательных чисел и чисел в котором цифр меньше 3)
+// string? str = System.Console.WriteLine();//переводим число в строку
+// if (str==null) return;
+// System.Console.WriteLine(str[2]);// возвращает 2 по индексу значение строки
