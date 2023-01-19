@@ -11,7 +11,7 @@ Console.Write(MakeArray(number, count));
 //Если 3 цифры нет, сообщает и выводит 0.
 int MakeArray(int a, int b)
 {
-int result = 0;
+int result = -1;
     if (b < 3)
     {
         Console.Write("Третьей цифры нет,  ");
