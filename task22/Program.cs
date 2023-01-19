@@ -8,5 +8,5 @@ while (i <= n)
 {
     square = i*i;
     i++;
-    System.Console.Write($"{square}");
+    System.Console.Write($" {square} ");
 } 
