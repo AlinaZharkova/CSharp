@@ -6,6 +6,7 @@ Console.Write("Введите число B: ");
 int numB = Convert.ToInt32(Console.ReadLine());
 int result = numA;
 
+if (numB==0) result=1;
 for (int i = 1; i < numB; i++)
 {
  result*=numA;
