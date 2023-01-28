@@ -9,7 +9,7 @@ void FillArray(int[] arr) //функция для заполнения масс�
 {
     for(int j = 0; j < arr.Length; j++)
     {
-        arr[j] = new Random().Next(100,1000);
+        arr[j] = new Random().Next(-100,101);
     }
 }
 
