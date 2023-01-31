@@ -61,7 +61,7 @@ Console.WriteLine($"Max - Min = {max - min}");
 
 // foreach (var item in arr)
 // {
-//     System.Console.WriteLine(Math.Round(item, 2)); // если нам нужно округлить число до какого-то значения - Math.Round
+//     System.Console.WriteLine($"{item:f2}"); // :f2 - округление числа до 2 знака после запятой
 // }
 
 // double genRndDouble(int a, int b, Random rnd)
