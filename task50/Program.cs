@@ -6,9 +6,9 @@
 //8 4 2 4
 //17 -> такого числа в массиве нет
 
-System.Console.Write("Введите индекс строки: ");
+System.Console.Write("Введите индекс строки искомого элемента: ");
 int m = Convert.ToInt32(Console.ReadLine());
-System.Console.Write("Введите индекс столбца: ");
+System.Console.Write("Введите индекс столбца искомого элемента: ");
 int n = Convert.ToInt32(Console.ReadLine());
 Random rnd = new Random();
 int[,] array = new int[6, 6];
@@ -16,7 +16,7 @@ int[,] array = new int[6, 6];
 FillArray(array);
 PrintArray(array);
 
-if (m < array.GetLength(0) && n < array.GetLength(1)) Console.WriteLine(array[m, n]);
+if (m < array.GetLength(0) && n < array.GetLength(1)) Console.WriteLine($"искомый элемент -> " + array[m, n]);
 else Console.WriteLine($"{m}{n} -> такого числа в массиве нет");
 
 
@@ -28,7 +28,6 @@ for (int i = 0; i < arr.GetLength(0); i++)
     {
         arr[i,j]= rnd.Next(-99,100);
     }
-    System.Console.WriteLine();
 }
 }
 
@@ -38,9 +37,8 @@ void PrintArray(int[,] arr)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
-            Console.Write(arr[i, j] + " ");
+            Console.Write(String.Format("{0,9}",(arr[i, j] + " ")));
         }
         Console.WriteLine();
     }
-     Console.WriteLine();
 }
