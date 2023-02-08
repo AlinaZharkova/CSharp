@@ -16,13 +16,11 @@ for (int i = 0; i < arr.GetLength(0); i++)
     System.Console.WriteLine();
 }
 
-
 for (int j = 0; j < arr.GetLength(1); j++)
 {
     (arr[0, j], arr[m - 1, j]) = (arr[m - 1, j], arr[0, j]);
 }
 Console.WriteLine();
-
 
 for (int i = 0; i < arr.GetLength(0); i++)
 {
