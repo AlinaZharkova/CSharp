@@ -12,7 +12,6 @@ int n = rnd.Next(4, 6);
 int sumRow=0;
 int index = 0;
 int result=0;
-//double minSumRow = 0;
 
 int[,] arr = new int[m, n];
 Console.WriteLine("Исходный массив:");
